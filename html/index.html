@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewInvest</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+   
+     
+</head>
+<body>
+    <div class="informacoesCDB">
+        <h1>Simulador de investimentos para CDB</h1>
+        <h2>
+            Quando o assunto é renda fixa, os Certificados de Depósito Bancário, mais conhecidos como CDBs, despontam como uma das opções de investimento mais populares do mercado. Esse tipo de ativo oferece a possibilidade de ganhar dinheiro emprestando para os bancos.
+            
+            Mas, apesar da sua popularidade, muitos investidores têm dúvidas sobre como esse produto funciona e quais são as suas características. Por isso, entender o que é CDB ajuda a compreender como esses ativos funcionam, quais os tipos de rentabilidade e a melhor forma de investir.
+        </h2>
+
+
+
+        <!DOCTYPE html>
+<html>
+<head>
+<body>
+
+
+<div id="valor" class="tabcontent">
+<h1>Valor</h1>
+<p>Aqui você simula quanto terá ao longo do tempo.</p>
+</div>
+
+
+<div id="tempo" class="tabcontent">
+<h1>Tempo</h1>
+<p>Aqui você simula em quanto tempo demorará para ter o valor X.</p>
+</div>
+
+
+<div class="tabButtons">
+    <button class="tablink" onclick="openTab('valor', this, 'green')" id="defaultOpen">Valor</button>
+    <button class="tablink" onclick="openTab('tempo', this, 'green')" >Tempo</button>
+</div>   
+
+</body>
+</html> 
+
+
+
+
+        <div class="inputs">
+
+                <label for="valorInvestido">Valor investido</label><br>
+                <input type="number" id="valor" name="valorInvestido"><br><br>
+        
+                <label for="taxaCDI">Taxa do CDI atual:</label><br>
+                <input type="number" id="taxaCDI" name="taxaCDI"><br><br>
+        
+                <label for="rendimentoCDB">Rendimento do CBD:</label><br>
+                <input type="number" id="rendimentoCDB" name="rendimentoCDB"><br><br>
+        
+                <label for="tempoInvestimento">Tempo de investimento em anos:</label><br>
+                <input type="number" id="tempoInvestimento" name="tempoInvestimento"><br><br>
+        
+                <button onclick="updateChart()"> Calcular </button>     
+           
+        </div>
+
+        
+        <div class="grafico">
+        <canvas id="cdbChart" width="800" height="500"></canvas>
+        </div>
+
+    </div>
+    <script  src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script  src="../js/script.js"></script>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 New Invest, por Luis Felipe. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

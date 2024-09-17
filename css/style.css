@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+.informacoesCDB{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.informacoesCDB h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 65px;
+    background-color: rgba(212, 255, 148, 0.719);
+    padding: 36px;
+    border-radius: 40px;
+    animation: mover 4s infinite;
+}
+
+@keyframes mover {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 100px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.informacoesCDB h2{
+    margin: 35px;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.inputs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 36px;
+    flex-direction: column;
+    width: 25%;
+    background-color: #1111;
+    border-radius: 25px;
+}
+
+.inputs button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7fe282;
+    width: 100px;
+    height: 36px;
+    border-radius: 12rem;
+    border-color: #333333;
+    transition: all 0.5s ease;
+}
+.inputs button:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+label {
+    font-weight: bold;
+    color: #333333;
+}
+
+input[type="number"],
+input[type="number"],
+input[type="number"],
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 6px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#cdbChart{
+    width: 800px;
+    height: 500px;
+    background-color: #dddddd;
+    border-radius: 15px;
+    margin-top: 35px;
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    border-radius: 20px;
+    background-color: #dddddd;
+    color: #555;
+
+    padding: 50px;
+    text-align: center;
+  }
+  .tabButtons{
+    display: flex;
+    width: 30%;
+
+  }
+  
