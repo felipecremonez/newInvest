@@ -193,15 +193,15 @@ function calcularTempo() {
   const Tempo = Math.log(valorFinalTempo / valorInicialTempo) / Math.log(1 + CDIRate);
   console.log(`Tempo: ${Tempo}`)
 
+  let anos = Math.floor(Tempo);
+  let mesesDecimais = Tempo - anos;
+  meses = Math.round(mesesDecimais * 12); // Converte a parte decimal em meses
+  
   const tempoCalculado = document.getElementById('tempoCalculado');
-  tempoCalculado.innerHTML = `Tempo: ${parseInt (Tempo,10)} anos`;
-  modal.style.display = "block";
+  tempoCalculado.innerHTML = `Tempo: ${anos} anos e ${meses} meses.`;
+modal.style.display = "block";
+
 }
-
-
-
-
-
 
 
 // Janela que abre informando o tempo resultado:
